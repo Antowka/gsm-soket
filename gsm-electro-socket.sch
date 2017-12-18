@@ -1,0 +1,178 @@
+EESchema Schematic File Version 2
+LIBS:gsm-electro-socket-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:boards
+LIBS:gsm-electro-socket-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ArduinoProMini U1
+U 1 1 5A35C694
+P 5300 4800
+F 0 "U1" V 6150 5950 60  0000 C CNN
+F 1 "ArduinoProMini" V 6050 5950 50  0000 C CNN
+F 2 "boards:ArduinoProMini" H 6050 5950 60  0001 C CNN
+F 3 "" H 6050 5950 60  0001 C CNN
+	1    5300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SIM800C U2
+U 1 1 5A36E8B7
+P 2850 5050
+F 0 "U2" H 3400 5400 60  0000 C CNN
+F 1 "SIM800C" H 3400 5500 60  0000 C CNN
+F 2 "" H 3400 5500 60  0001 C CNN
+F 3 "" H 3400 5500 60  0001 C CNN
+	1    2850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5A36E9AC
+P 6800 3250
+F 0 "#PWR4" H 6800 3000 50  0001 C CNN
+F 1 "GND" H 6800 3100 50  0000 C CNN
+F 2 "" H 6800 3250 50  0000 C CNN
+F 3 "" H 6800 3250 50  0000 C CNN
+	1    6800 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5A36EB91
+P 4400 4500
+F 0 "#PWR1" H 4400 4250 50  0001 C CNN
+F 1 "GND" H 4400 4350 50  0000 C CNN
+F 2 "" H 4400 4500 50  0000 C CNN
+F 3 "" H 4400 4500 50  0000 C CNN
+	1    4400 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR5
+U 1 1 5A36EBB7
+P 6800 3500
+F 0 "#PWR5" H 6800 3350 50  0001 C CNN
+F 1 "+5V" H 6800 3640 50  0000 C CNN
+F 2 "" H 6800 3500 50  0000 C CNN
+F 3 "" H 6800 3500 50  0000 C CNN
+	1    6800 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR2
+U 1 1 5A36EC33
+P 4500 4900
+F 0 "#PWR2" H 4500 4750 50  0001 C CNN
+F 1 "+5V" H 4500 5040 50  0000 C CNN
+F 2 "" H 4500 4900 50  0000 C CNN
+F 3 "" H 4500 4900 50  0000 C CNN
+	1    4500 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L R_Small R1_100
+U 1 1 5A36EE12
+P 4800 3300
+F 0 "R1_100" H 4830 3320 50  0000 L CNN
+F 1 "R_Small" H 4830 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0000 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2_370
+U 1 1 5A36EE3E
+P 4800 3600
+F 0 "R2_370" H 4830 3620 50  0000 L CNN
+F 1 "R_Small" H 4830 3560 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 4800 3600 50  0001 C CNN
+F 3 "" H 4800 3600 50  0000 C CNN
+	1    4800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3250 6800 3250
+Wire Wire Line
+	6600 3450 6800 3450
+Wire Wire Line
+	6800 3450 6800 3500
+Wire Wire Line
+	4250 4500 4400 4500
+Wire Wire Line
+	4250 4900 4500 4900
+Wire Wire Line
+	4800 3400 4800 3500
+Connection ~ 4800 3450
+$Comp
+L GND #PWR3
+U 1 1 5A36F0A7
+P 4800 3800
+F 0 "#PWR3" H 4800 3550 50  0001 C CNN
+F 1 "GND" H 4800 3650 50  0000 C CNN
+F 2 "" H 4800 3800 50  0000 C CNN
+F 3 "" H 4800 3800 50  0000 C CNN
+	1    4800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3700 4800 3800
+Wire Wire Line
+	4800 3200 4800 3150
+Wire Wire Line
+	4800 3150 5500 3150
+Wire Wire Line
+	4250 4600 5350 4600
+Wire Wire Line
+	5350 4600 5350 3250
+Wire Wire Line
+	5350 3250 5500 3250
+Wire Wire Line
+	4250 4700 4600 4700
+Wire Wire Line
+	4600 4700 4600 3450
+Wire Wire Line
+	4600 3450 4800 3450
+$EndSCHEMATC

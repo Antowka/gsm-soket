@@ -1,0 +1,94 @@
+EESchema Schematic File Version 2
+LIBS:gsm-electro-socket-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:boards
+LIBS:gsm-electro-socket-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R1
+U 1 1 5A35BB90
+P 5950 2800
+F 0 "R1" H 5980 2820 50  0000 L CNN
+F 1 "R_Small" H 5980 2760 50  0000 L CNN
+F 2 "Resistors_SMD:R_1210" H 5950 2800 50  0001 C CNN
+F 3 "" H 5950 2800 50  0000 C CNN
+	1    5950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5A35BD1E
+P 5950 3400
+F 0 "R2" H 5980 3420 50  0000 L CNN
+F 1 "R_Small" H 5980 3360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 5950 3400 50  0001 C CNN
+F 3 "" H 5950 3400 50  0000 C CNN
+	1    5950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3300 5950 2900
+Connection ~ 5950 3150
+$Comp
+L ArduinoProMini U1
+U 1 1 5A35C694
+P 4250 4300
+F 0 "U1" V 5100 5450 60  0000 C CNN
+F 1 "ArduinoProMini" V 5000 5450 50  0000 C CNN
+F 2 "boards:ArduinoProMini" H 5000 5450 60  0001 C CNN
+F 3 "" H 5000 5450 60  0001 C CNN
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3150 5950 3150
+Wire Wire Line
+	5950 2700 5550 2700
+Wire Wire Line
+	5550 2700 5550 2650
+Wire Wire Line
+	5950 3500 5950 3750
+Wire Wire Line
+	5950 3750 5550 3750
+$EndSCHEMATC
